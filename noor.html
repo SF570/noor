@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        nav {
+            background-color: #444;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+        }
+        
+        nav a:hover {
+            background-color: #555;
+            border-radius: 3px;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 1rem;
+        }
+        
+        .card-content h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>A simple website template with images you can replace</p>
+    </header>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+    
+    <main>
+        <h2>Image Gallery</h2>
+        <p>Below are some placeholder images. Replace the src attributes with your local image paths:</p>
+        
+        <div class="gallery">
+            <!-- Card 1 -->
+            <div class="card">
+                <!-- REPLACE THIS IMAGE LINK with your own: src="images/your-photo1.jpg" -->
+                <img src="noor_img.jpeg"  alt="Placeholder image 1 - replace with your photo">
+                <div class="card-content">
+                    <h3>Image 1</h3>
+                    <p>Replace this image with your own photo. Update the src attribute in the img tag.</p>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <!-- REPLACE THIS IMAGE LINK with your own: src="images/your-photo2.jpg" -->
+                <img src="noor_img.jpeg" height="100%" width="auto" alt="noor-1">
+                <div class="card-content">
+                    <h3>Image 2</h3>
+                    <p>Replace this image with your own photo. Update the src attribute in the img tag.</p>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="card">
+                <!-- REPLACE THIS IMAGE LINK with your own: src="images/your-photo3.jpg" -->
+                <img src="" alt="Placeholder image 3 - replace with your photo">
+                <div class="card-content">
+                    <h3>Image 3</h3>
+                    <p>Replace this image with your own photo. Update the src attribute in the img tag.</p>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="card">
+                <!-- REPLACE THIS IMAGE LINK with your own: src="images/your-photo4.jpg" -->
+                <img src="https://picsum.photos/400/300?random=4" alt="Placeholder image 4 - replace with your photo">
+                <div class="card-content">
+                    <h3>Image 4</h3>
+                    <p>Replace this image with your own photo. Update the src attribute in the img tag.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 My Simple Website. All images are placeholders - replace with your own!</p>
+    </footer>
+</body>
+</html>
